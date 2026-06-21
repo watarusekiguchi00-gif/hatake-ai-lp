@@ -67,192 +67,69 @@ export default function LP() {
         </section>
 
         {/* 4. Step1 */}
-        <section className="px-6 py-11 bg-white">
-          <h2 className="text-[22px] font-black text-center mb-1.5">写真を撮るだけ</h2>
-          <p className="text-center text-sm text-[#6B7C72] mb-6">面倒な入力は不要</p>
-          <div className="bg-hatake-green rounded-[24px] p-5 mb-6">
-            <div className="bg-white rounded-2xl overflow-hidden">
-              <div className="bg-[#1A2E22] h-[200px] flex items-center justify-center relative">
-                <div className="absolute top-3 left-3 w-6 h-6 border-l-2 border-t-2 border-white/70 rounded-tl" />
-                <div className="absolute top-3 right-3 w-6 h-6 border-r-2 border-t-2 border-white/70 rounded-tr" />
-                <div className="absolute bottom-3 left-3 w-6 h-6 border-l-2 border-b-2 border-white/70 rounded-bl" />
-                <div className="absolute bottom-3 right-3 w-6 h-6 border-r-2 border-b-2 border-white/70 rounded-br" />
-                <div className="w-14 h-14 rounded-full border-[3px] border-white" />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col gap-4">
-            {[
-              ['スマホで写真を撮るだけ', '名前やメモはあとでOK！まずは写真を撮るだけ'],
-              ['野菜と品種を選ぶだけ', 'トマト・ナス・キュウリなど最初に選ぶだけでOK'],
-              ['畑でも片手で使える', 'かんたん操作でどこでもサッと記録'],
-            ].map(([t, s], i) => (
-              <div key={i} className="flex items-start gap-3 pb-4 border-b border-[#E3DCC8] last:border-0 last:pb-0">
-                <div className="w-9 h-9 rounded-full bg-[#EAF3DE] flex items-center justify-center flex-shrink-0 text-hatake-green font-black">{i + 1}</div>
-                <div>
-                  <div className="font-extrabold text-[15px]">{t}</div>
-                  <div className="text-xs text-[#6B7C72] mt-0.5 leading-relaxed">{s}</div>
-                </div>
-              </div>
-            ))}
+        <section className="bg-white">
+          <div className="relative w-full" style={{ aspectRatio: '853 / 1844' }}>
+            <Image
+              src="/step1-composite.png"
+              alt="STEP1 写真を撮るだけ。面倒な入力は不要。スマホで写真を撮るだけ：名前やメモはあとでOK！野菜と品種を選ぶだけ：トマト・ナス・キュウリなど最初に選ぶだけでOK。畑でも片手で使える：かんたん操作でどこでもサッと記録"
+              fill
+              className="object-cover object-top"
+            />
           </div>
         </section>
 
         {/* 5. Step2 */}
-        <section className="px-6 py-11 bg-hatake-cream">
-          <h2 className="text-[22px] font-black text-center mb-1.5">AIが写真を分析</h2>
-          <p className="text-center text-sm text-[#6B7C72] mb-7">AIが畑の状態をくわしく観察します</p>
-          <div className="grid grid-cols-2 gap-3">
-            {[
-              ['葉の状態', '🍃'], ['茎の状態', '🌱'], ['花の状態', '🌼'], ['実の状態', '🍅'],
-            ].map(([t, icon], i) => (
-              <div key={i} className="bg-white border border-[#E3DCC8] rounded-2xl p-4 text-center">
-                <div className="text-2xl mb-2">{icon}</div>
-                <div className="font-bold text-[13px]">{t}</div>
-              </div>
-            ))}
-          </div>
-          <div className="bg-white border border-[#E3DCC8] rounded-2xl p-4 text-center mt-3">
-            <div className="text-2xl mb-2">🐛</div>
-            <div className="font-bold text-[13px]">病害虫リスク</div>
+        <section className="bg-hatake-cream">
+          <div className="relative w-full" style={{ aspectRatio: '863 / 1823' }}>
+            <Image
+              src="/step2-composite.png"
+              alt="STEP2 AIが写真を分析。AIが畑の状態をくわしく観察します。葉の状態、茎の状態、花の状態、実の状態、病害虫リスクをチェック。AIが数十の項目を同時に分析！経験や勘に頼らず、データに基づいた的確なアドバイスをお届けします。"
+              fill
+              className="object-cover object-top"
+            />
           </div>
         </section>
 
         {/* 6. Step3 */}
-        <section className="px-6 py-11 bg-white">
-          <h2 className="text-[22px] font-black text-center mb-1.5">AIが今日のアクションを提案</h2>
-          <p className="text-center text-sm text-[#6B7C72] mb-7">写真と生育状況をもとに、今日やることをお知らせします</p>
-
-          <div className="border border-[#E3DCC8] rounded-[20px] overflow-hidden mb-6">
-            <div className="bg-hatake-green px-4 py-3 text-white text-[13px] font-bold">今日のアクション</div>
-            <div className="p-4">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-xl">🙂</span>
-                <span className="font-black text-[15px] text-hatake-green">順調です！</span>
-              </div>
-              <div className="text-xs font-bold text-[#6B7C72] mb-2">今日やること</div>
-              <div className="flex flex-col gap-2">
-                {['わき芽をかく', '支柱に誘引する', '液肥を与える'].map((t, i) => (
-                  <div key={i} className="flex items-center gap-2 bg-[#EAF3DE] rounded-xl px-3 py-2.5">
-                    <span className="text-hatake-green font-black text-sm">✓</span>
-                    <span className="text-[13px] font-bold">{t}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+        <section className="bg-white">
+          <div className="relative w-full" style={{ aspectRatio: '853 / 1844' }}>
+            <Image
+              src="/step3-composite.png"
+              alt="STEP3 AIが今日のアクションを提案。写真と生育状況をもとに、今日やることをお知らせします。今日やること（おすすめ）：わき芽をかく、支柱に誘引する、液肥を与える。今の状態が一目でわかる、今日やることがすぐわかる。日々の管理がもっと楽しく、もっとラクに！"
+              fill
+              className="object-cover object-top"
+            />
           </div>
-
-          <div className="flex flex-col gap-3 mb-6">
-            <div className="flex items-start gap-3">
-              <span className="text-hatake-green text-lg flex-shrink-0">◎</span>
-              <div>
-                <div className="font-extrabold text-sm">今の状態が一目でわかる</div>
-                <div className="text-xs text-[#6B7C72] mt-0.5">生育ステージや健康状態をわかりやすく表示</div>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-hatake-green text-lg flex-shrink-0">🌱</span>
-              <div>
-                <div className="font-extrabold text-sm">今日やることがすぐわかる</div>
-                <div className="text-xs text-[#6B7C72] mt-0.5">優先度の高い作業だけをシンプルに提案</div>
-              </div>
-            </div>
-          </div>
-
-          <p className="text-center font-black text-[15px] text-hatake-green">
-            日々の管理がもっと楽しく、もっとラクに！
-          </p>
         </section>
 
         {/* 7. Step4 */}
-        <section className="px-6 py-11 bg-hatake-cream">
-          <h2 className="text-[22px] font-black text-center mb-1.5">わたしの畑日誌</h2>
-          <p className="text-center text-sm text-[#6B7C72] mb-7">毎日の記録が、あなただけの栽培記録になります。</p>
-
-          <div className="bg-white border border-[#E3DCC8] rounded-[20px] p-4 mb-6">
-            <div className="flex justify-between items-baseline mb-2">
-              <span className="text-xs font-bold text-[#6B7C72]">生育グラフ</span>
-              <span className="text-xs text-hatake-green font-bold">30日</span>
-            </div>
-            <svg viewBox="0 0 300 90" className="w-full h-[80px]">
-              <polyline points="0,75 60,65 120,48 180,35 240,18 300,8" fill="none" stroke="#0B5D35" strokeWidth="2.5" />
-              <polyline points="0,80 60,72 120,60 180,50 240,40 300,32" fill="none" stroke="#B4B2A9" strokeWidth="2" strokeDasharray="4 3" />
-            </svg>
-            <div className="border-t border-[#E3DCC8] mt-3 pt-3 flex flex-col gap-2">
-              {[
-                ['今すぐ大きな鉢へ植え替えを', '健康度65'],
-                ['支柱を立てる', '健康度60'],
-              ].map(([t, s], i) => (
-                <div key={i} className="flex justify-between items-center text-[12px]">
-                  <span className="font-bold">{t}</span>
-                  <span className="text-[#6B7C72]">{s}</span>
-                </div>
-              ))}
-            </div>
+        <section className="bg-hatake-cream">
+          <div className="relative w-full" style={{ aspectRatio: '864 / 1821' }}>
+            <Image
+              src="/step4-composite.png"
+              alt="STEP4 わたしの畑日誌。毎日の記録が、あなただけの栽培記録になります。成長の記録が残る、作業を記録して振り返れる、来年の栽培に活かせる。毎日の記録が、来年の栽培に活かせる。"
+              fill
+              className="object-cover object-top"
+            />
           </div>
-
-          <div className="flex flex-col gap-3 mb-6">
-            {[
-              ['成長の記録が残る', '写真や健康度を記録。毎日の変化がひと目でわかります。'],
-              ['作業を記録して振り返れる', 'いつ・何をしたかを記録。次の判断や管理に活かせます。'],
-              ['来年の栽培に活かせる', '今年の経験を残して、次の栽培をもっと上手に。'],
-            ].map(([t, s], i) => (
-              <div key={i} className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-[#EAF3DE] flex items-center justify-center flex-shrink-0 text-hatake-green font-black text-sm">{i + 1}</div>
-                <div>
-                  <div className="font-extrabold text-sm">{t}</div>
-                  <div className="text-xs text-[#6B7C72] mt-0.5 leading-relaxed">{s}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-center font-black text-[15px] text-hatake-green">
-            毎日の記録が、来年の栽培に活かせる。
-          </p>
         </section>
 
         {/* 8. Final CTA */}
-        <section className="px-6 py-12 bg-hatake-green text-white">
-          <h2 className="text-[24px] font-black text-center mb-1.5">hatake.aiをはじめよう！</h2>
-          <p className="text-center text-[13px] text-[#CDE5D8] mb-7">家庭菜園の悩みを、AIと記録で解決！</p>
-
-          <div className="bg-white rounded-[20px] p-4 mb-7">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-lg">🙂</span>
-              <span className="font-black text-sm text-hatake-green">今日のアクション</span>
-            </div>
-            <div className="flex flex-col gap-2">
-              {['今すぐ大きな鉢へ植え替えを', '支柱を立てる', '植え替え後に水やり'].map((t, i) => (
-                <div key={i} className="flex items-center gap-2 bg-[#F3F8F0] rounded-xl px-3 py-2 text-[#1A2E22]">
-                  <span className="text-hatake-green font-black text-xs">✓</span>
-                  <span className="text-xs font-bold">{t}</span>
-                </div>
-              ))}
-            </div>
+        <section className="bg-hatake-green relative">
+          <div className="relative w-full" style={{ aspectRatio: '864 / 1821' }}>
+            <Image
+              src="/final-cta-composite.png"
+              alt="AIと一緒に、もっと上手に育てよう。hatake.aiをはじめよう！家庭菜園の悩みを、AIと記録で解決！簡単3ステップでOK：1 写真を撮るだけ、2 今日のやることがわかる、3 わたしの畑日誌になる。記録が積み上がるほど、あなたの畑がもっと豊かに。今すぐ試してみる。登録は簡単30秒、すべての機能が無料で使える、いつでも解約OK"
+              fill
+              className="object-cover object-top"
+            />
+            <a
+              href="https://hatake-ai.vercel.app/"
+              aria-label="今すぐ試してみる"
+              className="absolute"
+              style={{ left: '4%', width: '92%', top: '87.5%', height: '6.5%' }}
+            />
           </div>
-
-          <div className="flex flex-col gap-4 mb-8">
-            {[
-              ['写真を撮るだけ'],
-              ['今日のやることがわかる'],
-              ['わたしの畑日誌になる'],
-            ].map(([t], i) => (
-              <div key={i} className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-white text-hatake-green flex items-center justify-center font-black text-sm flex-shrink-0">{i + 1}</div>
-                <div className="font-bold text-sm">{t}</div>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-center font-bold text-sm mb-6 leading-relaxed">
-            記録が積み上がるほど、<br />あなたの畑がもっと豊かに。
-          </p>
-
-          <a href="https://hatake-ai.vercel.app/" className="w-[90%] mx-auto block text-center bg-gradient-to-br from-[#FFD23F] to-[#F5A623] text-hatake-green rounded-2xl py-5 text-[18px] font-black shadow-[0_8px_24px_rgba(0,0,0,0.25)]">
-            無料で試してみる
-          </a>
-          <p className="text-center text-xs text-[#CDE5D8] mt-4">登録は簡単30秒・クレジットカード不要</p>
         </section>
 
       </div>
