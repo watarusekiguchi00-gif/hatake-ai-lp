@@ -7,7 +7,7 @@ export default function LP() {
       <div className="mx-auto max-w-[430px]">
 
         {/* 1. Hero */}
-        <section className="relative pb-6 text-center overflow-hidden bg-hatake-cream">
+        <section className="relative text-center overflow-hidden bg-hatake-cream">
           {/* 写真・吹き出し・見出し・スマホUIモックまで一体で作られた元画像をそのまま使用 */}
           <div className="relative w-full" style={{ aspectRatio: '941 / 1250' }}>
             <Image
@@ -17,6 +17,20 @@ export default function LP() {
               priority
               className="object-cover object-top"
             />
+          </div>
+
+          <div className="bg-hatake-green px-6 pt-7 pb-8">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <span className="text-[#FFD96B] text-sm">🌾</span>
+              <span className="text-[15px] font-black text-white">面倒な入力は不要！</span>
+              <span className="text-[#FFD96B] text-sm">🌾</span>
+            </div>
+            <button className="w-full bg-gradient-to-br from-[#FF9D2E] to-[#FF7A00] text-white rounded-2xl py-[16px] text-[17px] font-black shadow-[0_8px_20px_rgba(0,0,0,0.2)] flex items-center justify-center gap-2">
+              無料で試してみる <span>›</span>
+            </button>
+            <div className="flex justify-center gap-3.5 mt-4 text-[11px] text-[#CDE5D8] flex-wrap">
+              <span>写真を撮るだけ</span><span>今日やることが分かる</span><span>記録が残る</span>
+            </div>
           </div>
         </section>
 
