@@ -7,31 +7,35 @@ export default function LP() {
       <div className="mx-auto max-w-[430px]">
 
         {/* 1. Hero */}
-        <section className="relative pt-10 pb-10 text-center overflow-hidden">
-          {/* 背景：畑に立つ生産者の写真。上部はそのまま見せ、下にいくほどクリーム背景へ溶け込ませる */}
-          <div className="absolute inset-x-0 top-0 h-[300px]">
-            <Image
-              src="/hero-farmer.png"
-              alt="畑で野菜かごを持つ生産者"
-              fill
-              priority
-              className="object-cover object-top"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-hatake-cream/10 to-hatake-cream" />
+        <section className="relative pt-8 pb-10 text-center overflow-hidden bg-hatake-cream">
+          {/* 人物写真は右側に配置。左30%はクリームにフェードさせ見出し用の余白を確保 */}
+          <div className="relative h-[440px] mb-2">
+            <div className="absolute inset-0">
+              <Image
+                src="/hero-farmer.png"
+                alt="畑で野菜かごを持つ生産者"
+                fill
+                priority
+                className="object-cover"
+                style={{ objectPosition: '78% 18%' }}
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-hatake-cream via-hatake-cream/85 to-transparent" style={{ width: '62%' }} />
+            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-hatake-cream to-transparent" />
+
+            <div className="absolute inset-y-0 left-0 w-[62%] flex flex-col justify-center items-start text-left pl-6 pr-2">
+              <div className="inline-block bg-white border-[1.5px] border-[#E3DCC8] rounded-full px-3.5 py-[6px] text-[12px] font-bold text-hatake-green mb-4 shadow-sm">
+                その判断、本当にあってるかな？
+              </div>
+              <h1 className="text-[28px] font-black leading-[1.3] tracking-tight">
+                <span className="block text-hatake-orange">今日やること</span>
+                <span className="block text-[19px] font-extrabold my-1">今日はやらないこと</span>
+                <span className="block text-hatake-green">写真を撮るだけ</span>
+              </h1>
+            </div>
           </div>
 
           <div className="relative px-6">
-            <div className="inline-block bg-white/95 border-[1.5px] border-[#E3DCC8] rounded-full px-4 py-[7px] text-[13px] font-bold text-hatake-green mb-5 shadow-sm">
-              その判断、本当にあってるかな？
-            </div>
-            <h1 className="text-[34px] font-black leading-[1.35] tracking-tight mb-[18px]">
-              <span className="block text-hatake-orange drop-shadow-[0_2px_6px_rgba(255,255,255,0.9)]">今日やること</span>
-              <span className="block text-[24px] font-extrabold my-1.5 drop-shadow-[0_2px_6px_rgba(255,255,255,0.9)]">今日はやらないこと</span>
-              <span className="block text-hatake-green drop-shadow-[0_2px_6px_rgba(255,255,255,0.9)]">写真を撮るだけ</span>
-            </h1>
-          </div>
-
-          <div className="relative px-6 pt-[140px]">
             <p className="text-[15px] leading-[1.9] text-[#4B564E] mb-7">
               家庭菜園のAI農業顧問<br />
               AIがあなたの畑を見て、毎日の判断をサポートします。
