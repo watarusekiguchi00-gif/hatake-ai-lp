@@ -25,7 +25,7 @@ export default function LP() {
               <span className="text-[15px] font-black text-white">面倒な入力は不要！</span>
               <span className="text-[#FFD96B] text-sm">🌾</span>
             </div>
-            <button className="w-full bg-gradient-to-br from-[#FF9D2E] to-[#FF7A00] text-white rounded-2xl py-[16px] text-[17px] font-black shadow-[0_8px_20px_rgba(0,0,0,0.2)] flex items-center justify-center gap-2">
+            <button className="w-full bg-gradient-to-br from-[#FFD23F] to-[#F5A623] text-hatake-green rounded-2xl py-[16px] text-[17px] font-black shadow-[0_8px_20px_rgba(0,0,0,0.2)] flex items-center justify-center gap-2">
               無料で試してみる <span>›</span>
             </button>
             <div className="flex justify-center gap-3.5 mt-4 text-[11px] text-[#CDE5D8] flex-wrap">
@@ -59,7 +59,7 @@ export default function LP() {
               「今日やるべきか」が<br />分からないだけです。
             </p>
             <p className="text-white text-sm font-bold mb-4">その迷いを、AIが解決します。</p>
-            <button className="w-full bg-gradient-to-br from-[#FF9D2E] to-[#FF7A00] text-white rounded-2xl py-[15px] text-[15px] font-black">
+            <button className="w-full bg-gradient-to-br from-[#FFD23F] to-[#F5A623] text-hatake-green rounded-2xl py-[15px] text-[15px] font-black">
               無料で試してみる
             </button>
           </div>
@@ -263,7 +263,7 @@ export default function LP() {
             記録が積み上がるほど、<br />あなたの畑がもっと豊かに。
           </p>
 
-          <button className="w-[90%] mx-auto block bg-gradient-to-br from-[#FF9D2E] to-[#FF7A00] text-white rounded-2xl py-5 text-[18px] font-black shadow-[0_8px_24px_rgba(255,138,0,0.4)]">
+          <button className="w-[90%] mx-auto block bg-gradient-to-br from-[#FFD23F] to-[#F5A623] text-hatake-green rounded-2xl py-5 text-[18px] font-black shadow-[0_8px_24px_rgba(0,0,0,0.25)]">
             無料で試してみる
           </button>
           <p className="text-center text-xs text-[#CDE5D8] mt-4">登録は簡単30秒・クレジットカード不要</p>
