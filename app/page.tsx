@@ -35,33 +35,22 @@ export default function LP() {
         </section>
 
         {/* 2. Pain Section */}
-        <section className="px-6 py-11 bg-white">
-          <h2 className="text-[22px] font-black text-center mb-7">こんな迷いありませんか？</h2>
-          <div className="flex flex-col gap-3 mb-7">
-            {[
-              { icon: '💧', bg: '#E6F1FB', q: '今、水やりしていいの？', sub: '葉がしおれてきた…水不足？あげすぎ？' },
-              { icon: '🌿', bg: '#EAF3DE', q: 'この枝、取っていいの？', sub: 'これって脇芽？取るべき？残すべき？' },
-              { icon: '🍅', bg: '#FFF1E0', q: '今、収穫していいの？', sub: 'まだ早い？遅い？ベストなタイミングは？' },
-              { icon: '🧪', bg: '#FBEAF0', q: '肥料あげていいの？', sub: '足りない？多すぎ？今あげるべき？' },
-            ].map((p, i) => (
-              <div key={i} className="border-[1.5px] border-[#E3DCC8] rounded-2xl p-4 flex items-center gap-3.5">
-                <div className="w-[38px] h-[38px] rounded-full flex items-center justify-center text-[17px] flex-shrink-0" style={{ background: p.bg }}>{p.icon}</div>
-                <div>
-                  <div className="font-extrabold text-[15px]">{p.q}</div>
-                  <div className="text-xs text-[#6B7C72] mt-0.5">{p.sub}</div>
-                </div>
-              </div>
-            ))}
+        <section className="bg-white">
+          <div className="relative w-full" style={{ aspectRatio: '1080 / 1592' }}>
+            <Image
+              src="/pain-composite.png"
+              alt="こんな迷いありませんか？ 今、水やりしていいの？葉がしおれてきた…水不足？あげすぎ？ この枝、取っていいの？これって脇芽？取るべき？残すべき？ 今、収穫していいの？まだ早い？遅い？ベストなタイミングは？ 肥料あげていいの？足りない？多すぎ？今あげるべき？ 家庭菜園の失敗は、知識不足ではありません。「今日やるべきか」が分からないだけです。"
+              fill
+              className="object-cover object-top"
+            />
           </div>
-          <div className="bg-hatake-green rounded-[18px] px-5 py-6 text-center">
-            <p className="text-[#CDE5D8] text-[13px] mb-1.5">家庭菜園の失敗は、知識不足ではありません。</p>
-            <p className="text-white text-lg font-black mb-3.5 leading-snug">
-              「今日やるべきか」が<br />分からないだけです。
-            </p>
-            <p className="text-white text-sm font-bold mb-4">その迷いを、AIが解決します。</p>
-            <button className="w-full bg-gradient-to-br from-[#FFD23F] to-[#F5A623] text-hatake-green rounded-2xl py-[15px] text-[15px] font-black">
-              無料で試してみる
-            </button>
+          <div className="px-6 pb-11">
+            <div className="bg-hatake-green rounded-[18px] px-5 py-6 text-center -mt-1">
+              <p className="text-white text-sm font-bold mb-4">その迷いを、AIが解決します。</p>
+              <button className="w-full bg-gradient-to-br from-[#FFD23F] to-[#F5A623] text-hatake-green rounded-2xl py-[15px] text-[15px] font-black">
+                無料で試してみる
+              </button>
+            </div>
           </div>
         </section>
 
