@@ -7,7 +7,7 @@ export default function LP() {
       <div className="mx-auto max-w-[430px]">
 
         {/* 1. Hero */}
-        <section className="relative pb-10 text-center overflow-hidden bg-hatake-cream">
+        <section className="relative pb-6 text-center overflow-hidden bg-hatake-cream">
           {/* 写真・吹き出し・見出し・スマホUIモックまで一体で作られた元画像をそのまま使用 */}
           <div className="relative w-full" style={{ aspectRatio: '941 / 1250' }}>
             <Image
@@ -17,34 +17,6 @@ export default function LP() {
               priority
               className="object-cover object-top"
             />
-          </div>
-
-          <div className="relative px-6 pt-7">
-            {/* signature: 畝（うね）の曲線で「やる/やらない」の二分性を表現 */}
-            <div className="relative rounded-[20px] overflow-hidden h-[120px] mb-7 bg-hatake-green">
-              <svg viewBox="0 0 430 120" className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
-                <path d="M0,60 C60,30 110,90 180,60 C250,30 300,90 430,55 L430,120 L0,120 Z" fill="#0E7042" />
-                <path d="M0,75 C70,50 130,100 200,75 C270,50 330,100 430,70 L430,120 L0,120 Z" fill="#083F25" />
-              </svg>
-              <div className="absolute inset-0 flex items-center justify-center gap-9">
-                <div className="text-center">
-                  <div className="w-11 h-11 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-1.5 text-xl">☀</div>
-                  <div className="text-white text-xs font-bold">やること</div>
-                </div>
-                <div className="w-px h-12 bg-white/25" />
-                <div className="text-center">
-                  <div className="w-11 h-11 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-1.5 text-xl">✕</div>
-                  <div className="text-white text-xs font-bold">やらないこと</div>
-                </div>
-              </div>
-            </div>
-
-            <button className="w-[90%] bg-gradient-to-br from-[#FF9D2E] to-[#FF7A00] text-white rounded-2xl py-[18px] text-[17px] font-black shadow-[0_8px_20px_rgba(255,138,0,0.35)]">
-              無料で試してみる
-            </button>
-            <div className="flex justify-center gap-3.5 mt-4 text-[11px] text-[#6B7C72] flex-wrap">
-              <span>写真を撮るだけ</span><span>今日やることが分かる</span><span>記録が残る</span>
-            </div>
           </div>
         </section>
 
