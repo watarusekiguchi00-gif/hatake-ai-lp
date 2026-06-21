@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 
 export default function LP() {
   return (
@@ -6,44 +7,61 @@ export default function LP() {
       <div className="mx-auto max-w-[430px]">
 
         {/* 1. Hero */}
-        <section className="px-6 pt-12 pb-10 text-center bg-gradient-to-b from-hatake-cream to-hatake-creamdeep">
-          <div className="inline-block bg-white border-[1.5px] border-[#E3DCC8] rounded-full px-4 py-[7px] text-[13px] font-bold text-hatake-green mb-5">
-            その判断、本当にあってるかな？
+        <section className="relative pt-10 pb-10 text-center overflow-hidden">
+          {/* 背景：畑に立つ生産者の写真。上部はそのまま見せ、下にいくほどクリーム背景へ溶け込ませる */}
+          <div className="absolute inset-x-0 top-0 h-[300px]">
+            <Image
+              src="/hero-farmer.png"
+              alt="畑で野菜かごを持つ生産者"
+              fill
+              priority
+              className="object-cover object-top"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-hatake-cream/10 to-hatake-cream" />
           </div>
-          <h1 className="text-[34px] font-black leading-[1.35] tracking-tight mb-[18px]">
-            <span className="block text-hatake-orange">今日やること</span>
-            <span className="block text-[24px] font-extrabold my-1.5">今日はやらないこと</span>
-            <span className="block text-hatake-green">写真を撮るだけ</span>
-          </h1>
-          <p className="text-[15px] leading-[1.9] text-[#4B564E] mb-7">
-            家庭菜園のAI農業顧問<br />
-            AIがあなたの畑を見て、毎日の判断をサポートします。
-          </p>
 
-          {/* signature: 畝（うね）の曲線で「やる/やらない」の二分性を表現 */}
-          <div className="relative rounded-[20px] overflow-hidden h-[120px] mb-7 bg-hatake-green">
-            <svg viewBox="0 0 430 120" className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
-              <path d="M0,60 C60,30 110,90 180,60 C250,30 300,90 430,55 L430,120 L0,120 Z" fill="#0E7042" />
-              <path d="M0,75 C70,50 130,100 200,75 C270,50 330,100 430,70 L430,120 L0,120 Z" fill="#083F25" />
-            </svg>
-            <div className="absolute inset-0 flex items-center justify-center gap-9">
-              <div className="text-center">
-                <div className="w-11 h-11 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-1.5 text-xl">☀</div>
-                <div className="text-white text-xs font-bold">やること</div>
-              </div>
-              <div className="w-px h-12 bg-white/25" />
-              <div className="text-center">
-                <div className="w-11 h-11 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-1.5 text-xl">✕</div>
-                <div className="text-white text-xs font-bold">やらないこと</div>
+          <div className="relative px-6">
+            <div className="inline-block bg-white/95 border-[1.5px] border-[#E3DCC8] rounded-full px-4 py-[7px] text-[13px] font-bold text-hatake-green mb-5 shadow-sm">
+              その判断、本当にあってるかな？
+            </div>
+            <h1 className="text-[34px] font-black leading-[1.35] tracking-tight mb-[18px]">
+              <span className="block text-hatake-orange drop-shadow-[0_2px_6px_rgba(255,255,255,0.9)]">今日やること</span>
+              <span className="block text-[24px] font-extrabold my-1.5 drop-shadow-[0_2px_6px_rgba(255,255,255,0.9)]">今日はやらないこと</span>
+              <span className="block text-hatake-green drop-shadow-[0_2px_6px_rgba(255,255,255,0.9)]">写真を撮るだけ</span>
+            </h1>
+          </div>
+
+          <div className="relative px-6 pt-[140px]">
+            <p className="text-[15px] leading-[1.9] text-[#4B564E] mb-7">
+              家庭菜園のAI農業顧問<br />
+              AIがあなたの畑を見て、毎日の判断をサポートします。
+            </p>
+
+            {/* signature: 畝（うね）の曲線で「やる/やらない」の二分性を表現 */}
+            <div className="relative rounded-[20px] overflow-hidden h-[120px] mb-7 bg-hatake-green">
+              <svg viewBox="0 0 430 120" className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
+                <path d="M0,60 C60,30 110,90 180,60 C250,30 300,90 430,55 L430,120 L0,120 Z" fill="#0E7042" />
+                <path d="M0,75 C70,50 130,100 200,75 C270,50 330,100 430,70 L430,120 L0,120 Z" fill="#083F25" />
+              </svg>
+              <div className="absolute inset-0 flex items-center justify-center gap-9">
+                <div className="text-center">
+                  <div className="w-11 h-11 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-1.5 text-xl">☀</div>
+                  <div className="text-white text-xs font-bold">やること</div>
+                </div>
+                <div className="w-px h-12 bg-white/25" />
+                <div className="text-center">
+                  <div className="w-11 h-11 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-1.5 text-xl">✕</div>
+                  <div className="text-white text-xs font-bold">やらないこと</div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <button className="w-[90%] bg-gradient-to-br from-[#FF9D2E] to-[#FF7A00] text-white rounded-2xl py-[18px] text-[17px] font-black shadow-[0_8px_20px_rgba(255,138,0,0.35)]">
-            無料で試してみる
-          </button>
-          <div className="flex justify-center gap-3.5 mt-4 text-[11px] text-[#6B7C72] flex-wrap">
-            <span>写真を撮るだけ</span><span>今日やることが分かる</span><span>記録が残る</span>
+            <button className="w-[90%] bg-gradient-to-br from-[#FF9D2E] to-[#FF7A00] text-white rounded-2xl py-[18px] text-[17px] font-black shadow-[0_8px_20px_rgba(255,138,0,0.35)]">
+              無料で試してみる
+            </button>
+            <div className="flex justify-center gap-3.5 mt-4 text-[11px] text-[#6B7C72] flex-wrap">
+              <span>写真を撮るだけ</span><span>今日やることが分かる</span><span>記録が残る</span>
+            </div>
           </div>
         </section>
 
