@@ -7,31 +7,54 @@ export default function LP() {
       <div className="mx-auto max-w-[430px]">
 
         {/* 1. Hero */}
-        <section className="relative pt-8 pb-10 text-center overflow-hidden bg-hatake-cream">
-          {/* 人物写真は右側に配置。左30%はクリームにフェードさせ見出し用の余白を確保 */}
-          <div className="relative h-[440px] mb-2">
-            <div className="absolute inset-0">
+        <section className="relative pt-7 pb-10 text-center overflow-hidden bg-hatake-cream">
+          {/* 人物写真は右下にコンパクトに配置。左側はベタのクリーム背景＝見出し専用エリア */}
+          <div className="relative h-[460px] mb-2">
+            <div className="absolute inset-0 flex flex-col justify-end items-start text-left px-6 pb-5 z-10">
+              <div className="inline-block bg-white border-[1.5px] border-[#E3DCC8] rounded-full px-3.5 py-[6px] text-[12px] font-bold text-hatake-green mb-4 shadow-sm">
+                その判断、本当にあってるかな？
+              </div>
+            </div>
+
+            <div className="absolute inset-x-0 top-0 flex flex-col items-start text-left px-6 pt-1 z-10">
+              <h1 className="text-[28px] font-black leading-[1.3] tracking-tight">
+                <span className="block text-hatake-orange">今日やること</span>
+                <span className="block text-[19px] font-extrabold my-1">今日はやらないこと</span>
+                <span className="block text-hatake-green">写真を撮るだけ</span>
+              </h1>
+            </div>
+
+            {/* 写真：右下に収め、頭上から胸元までをコンパクトに見せる */}
+            <div className="absolute right-[-8%] bottom-0 w-[64%] h-[78%] rounded-[24px] overflow-hidden">
               <Image
                 src="/hero-farmer.png"
                 alt="畑で野菜かごを持つ生産者"
                 fill
                 priority
                 className="object-cover"
-                style={{ objectPosition: '78% 18%' }}
+                style={{ objectPosition: '50% 20%' }}
               />
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-hatake-cream/40" />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-r from-hatake-cream via-hatake-cream/85 to-transparent" style={{ width: '62%' }} />
-            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-hatake-cream to-transparent" />
 
-            <div className="absolute inset-y-0 left-0 w-[62%] flex flex-col justify-center items-start text-left pl-6 pr-2">
-              <div className="inline-block bg-white border-[1.5px] border-[#E3DCC8] rounded-full px-3.5 py-[6px] text-[12px] font-bold text-hatake-green mb-4 shadow-sm">
-                その判断、本当にあってるかな？
+            {/* スマホUIモック（オリジナル）：写真の手前に重ねる */}
+            <div className="absolute right-2 bottom-0 w-[148px] bg-white rounded-[18px] border border-[#E3DCC8] shadow-lg overflow-hidden z-20">
+              <div className="bg-hatake-green px-3 py-2 text-white text-[10px] font-bold">今日のアドバイス</div>
+              <div className="p-2.5">
+                <div className="flex items-center gap-1.5 mb-2">
+                  <span className="text-sm">🙂</span>
+                  <span className="font-black text-[10px] text-hatake-green">順調です！</span>
+                </div>
+                <div className="text-[8px] font-bold text-[#6B7C72] mb-1">今日やること</div>
+                <div className="flex flex-col gap-1">
+                  {['わき芽をかく', '支柱に誘引する'].map((t, i) => (
+                    <div key={i} className="flex items-center gap-1 bg-[#EAF3DE] rounded-md px-1.5 py-1">
+                      <span className="text-hatake-green font-black text-[8px]">✓</span>
+                      <span className="text-[8px] font-bold leading-tight">{t}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <h1 className="text-[28px] font-black leading-[1.3] tracking-tight">
-                <span className="block text-hatake-orange">今日やること</span>
-                <span className="block text-[19px] font-extrabold my-1">今日はやらないこと</span>
-                <span className="block text-hatake-green">写真を撮るだけ</span>
-              </h1>
             </div>
           </div>
 
