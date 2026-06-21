@@ -56,41 +56,13 @@ export default function LP() {
 
         {/* 3. Flow Section */}
         <section className="bg-hatake-cream">
-          <div className="relative w-full" style={{ aspectRatio: '864 / 720' }}>
-            <Image src="/flow-top.png" alt="迷わない！今日やることがすぐ分かる。AIがあなたの畑を観察し、最適なアドバイスを提案します。1 写真を撮る 2 AIが見る" fill className="object-cover object-top" />
-          </div>
-          <div className="px-6">
-            <div className="relative w-full mx-auto" style={{ aspectRatio: '615 / 240', maxWidth: 615 }}>
-              <Image src="/flow-step3.png" alt="3 今日やることが一目で分かる。やること：わき芽をかきとる、支柱に誘引する、追肥をする" fill className="object-contain object-left" />
-            </div>
-          </div>
-          <div className="relative w-full" style={{ aspectRatio: '864 / 255' }}>
-            <Image src="/flow-step4.png" alt="4 記録が残る。作業内容と作物の状態を自動で記録" fill className="object-cover object-top" />
-          </div>
-
-          <div className="px-6 pt-2 pb-2">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="flex-1 h-px bg-hatake-green/30" />
-              <span className="text-[15px] font-black text-hatake-green whitespace-nowrap">例えばトマトの場合</span>
-              <div className="flex-1 h-px bg-hatake-green/30" />
-            </div>
-            <div className="flex gap-2 items-start">
-              <div className="relative w-[44%] flex-shrink-0" style={{ aspectRatio: '375 / 330' }}>
-                <Image src="/flow-tomato-photo.png" alt="トマト" fill className="object-cover rounded-xl" />
-              </div>
-              <div className="flex-1 pt-1">
-                <div className="relative w-full mb-1.5" style={{ aspectRatio: '430 / 60' }}>
-                  <Image src="/flow-tomato-heading.png" alt="今日のアドバイス" fill className="object-contain object-left" />
-                </div>
-                <div className="relative w-full" style={{ aspectRatio: '215 / 205' }}>
-                  <Image src="/flow-tomato-card.png" alt="やること：わき芽をかきとる、支柱に誘引する、追肥をする（液肥）" fill className="object-contain object-left" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative w-full" style={{ aspectRatio: '864 / 276' }}>
-            <Image src="/flow-bottom.png" alt="もう迷わない！感覚や経験に頼らず、AIが「今日の最適解」を教えてくれます。家庭菜園を、もっと楽しく、もっと失敗しない毎日に。" fill className="object-cover object-top" />
+          <div className="relative w-full" style={{ aspectRatio: '862 / 1824' }}>
+            <Image
+              src="/flow-composite.png"
+              alt="迷わない！今日やることがすぐ分かる。AIがあなたの畑を観察し、最適なアドバイスを提案します。1 写真を撮る 2 AIが見る 3 今日やることが一目で分かる：わき芽をかきとる、支柱に誘引する、追肥をする（液肥） 4 記録が残る。例えばトマトの場合、今日のアドバイス。もう迷わない！感覚や経験に頼らず、AIが「今日の最適解」を教えてくれます。家庭菜園を、もっと楽しく、もっと失敗しない毎日に。"
+              fill
+              className="object-cover object-top"
+            />
           </div>
         </section>
 
