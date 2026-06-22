@@ -121,23 +121,34 @@ export default function LP() {
         </section>
 
         {/* 8. Final CTA */}
-        <section className="bg-hatake-cream relative">
-          <div className="relative w-full" style={{ aspectRatio: '862 / 1825' }}>
+        <section className="bg-hatake-cream">
+          {/* 上部：hatake.ai〜もっと豊かに */}
+          <div className="relative w-full" style={{ aspectRatio: '862 / 1372' }}>
             <Image
-              src="/final-cta-composite.png"
-              alt="AIと一緒に、もっと上手に育てよう。hatake.ai 家庭菜園の悩みを、AIと記録で解決！1 写真を撮るだけ、2 今日のアクションがすぐわかる、3 記録が残る。記録が積み上がるほど、あなたの畑がもっと豊かに。まずは無料でお試しください。無料で今日のアクションを確認する。登録30秒、クレカ不要、いつでも解約OK"
+              src="/final-cta-top.png"
+              alt="AIと一緒に、もっと上手に育てよう。hatake.ai 家庭菜園の悩みを、AIと記録で解決！1 写真を撮るだけ、2 今日のアクションがすぐわかる、3 記録が残る。記録が積み上がるほど、あなたの畑がもっと豊かに。"
               fill
               className="object-cover object-top"
             />
-            {/* 準備中オーバーレイ：ボタン帯を覆う */}
-            <div className="absolute flex flex-col items-center gap-1" style={{ left: '4%', width: '92%', top: '69%', height: '18%' }}>
-              <span className="w-full bg-[#A8A8A8] text-white rounded-2xl py-[13px] text-[16px] font-black flex items-center justify-center gap-2 cursor-default">
-                🌱 ただいま準備中です
-              </span>
-              <a href="https://www.instagram.com/hatake_ai_jp?igsh=N3dpNXlqcTRidTRn" target="_blank" rel="noopener noreferrer" className="text-[12px] text-hatake-green underline underline-offset-2">
-                👉 最新情報は Instagram @hatake_ai_jp
-              </a>
-            </div>
+          </div>
+          {/* 準備中CTA */}
+          <div className="px-5 pb-2 pt-4 bg-hatake-cream">
+            <p className="text-center text-[13px] font-bold text-hatake-green mb-3">\ まずは<span className="text-[#E05A00]">無料</span>でお試しください /</p>
+            <span className="w-full bg-[#A8A8A8] text-white rounded-2xl py-[16px] text-[17px] font-black shadow-[0_4px_12px_rgba(0,0,0,0.15)] flex items-center justify-center gap-2 cursor-default">
+              🌱 ただいま準備中です
+            </span>
+            <a href="https://www.instagram.com/hatake_ai_jp?igsh=N3dpNXlqcTRidTRn" target="_blank" rel="noopener noreferrer" className="block text-center text-[13px] text-hatake-green mt-3 underline underline-offset-2">
+              👉 最新情報は Instagram @hatake_ai_jp
+            </a>
+          </div>
+          {/* 下部装飾：登録30秒・クレカ不要・葉っぱ */}
+          <div className="relative w-full" style={{ aspectRatio: '862 / 150' }}>
+            <Image
+              src="/final-cta-bottom.png"
+              alt="登録30秒、クレカ不要、いつでも解約OK"
+              fill
+              className="object-cover object-top"
+            />
           </div>
         </section>
 
