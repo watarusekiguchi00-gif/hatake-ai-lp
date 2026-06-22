@@ -129,14 +129,6 @@ export default function LP() {
               fill
               className="object-cover object-top"
             />
-            <a
-              href="https://www.instagram.com/hatake_ai_jp?igsh=N3dpNXlqcTRidTRn"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="最新情報はInstagram @hatake_ai_jp"
-              className="absolute"
-              style={{ left: '4%', width: '92%', top: '70%', height: '16%' }}
-            />
           </div>
         </section>
 
