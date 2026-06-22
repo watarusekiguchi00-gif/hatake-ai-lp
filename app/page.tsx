@@ -25,9 +25,12 @@ export default function LP() {
               <span className="text-[15px] font-black text-white">面倒な入力は不要！</span>
               <span className="text-[#FFD96B] text-sm">🌾</span>
             </div>
-            <span className="w-full bg-gradient-to-r from-[#FCE556] to-[#FE5007] text-white rounded-2xl py-[16px] text-[17px] font-black shadow-[0_8px_20px_rgba(0,0,0,0.2)] flex items-center justify-center gap-2">
-              無料で試してみる <span>›</span>
+            <span className="w-full bg-[#A8A8A8] text-white rounded-2xl py-[16px] text-[17px] font-black shadow-[0_8px_20px_rgba(0,0,0,0.15)] flex items-center justify-center gap-2 cursor-default">
+              🌱 ただいま準備中です
             </span>
+            <a href="https://www.instagram.com/hatake_ai_jp?igsh=N3dpNXlqcTRidTRn" target="_blank" rel="noopener noreferrer" className="block text-center text-[13px] text-[#CDE5D8] mt-3 underline underline-offset-2">
+              👉 最新情報は Instagram @hatake_ai_jp
+            </a>
             <div className="flex justify-center gap-3.5 mt-4 text-[11px] text-[#CDE5D8] flex-wrap">
               <span>写真を撮るだけ</span><span>今日やることが分かる</span><span>記録が残る</span>
             </div>
@@ -47,9 +50,12 @@ export default function LP() {
           <div className="px-6 pb-11">
             <div className="bg-hatake-green rounded-[18px] px-5 py-6 text-center -mt-1">
               <p className="text-white text-sm font-bold mb-4">その迷いを、AIが解決します。</p>
-              <span className="w-full bg-gradient-to-r from-[#FCE556] to-[#FE5007] text-white rounded-2xl py-[15px] text-[15px] font-black block">
-                無料で試してみる
+              <span className="w-full bg-[#A8A8A8] text-white rounded-2xl py-[15px] text-[15px] font-black flex items-center justify-center gap-2 cursor-default">
+                🌱 ただいま準備中です
               </span>
+              <a href="https://www.instagram.com/hatake_ai_jp?igsh=N3dpNXlqcTRidTRn" target="_blank" rel="noopener noreferrer" className="block text-center text-[12px] text-white/70 mt-3 underline underline-offset-2">
+                👉 最新情報は Instagram @hatake_ai_jp
+              </a>
             </div>
           </div>
         </section>
@@ -124,8 +130,10 @@ export default function LP() {
               className="object-cover object-top"
             />
             <a
-              href="#"
-              aria-label="無料で今日のアクションを確認する"
+              href="https://www.instagram.com/hatake_ai_jp?igsh=N3dpNXlqcTRidTRn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="最新情報はInstagram @hatake_ai_jp"
               className="absolute"
               style={{ left: '4%', width: '92%', top: '70%', height: '16%' }}
             />
