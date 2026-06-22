@@ -25,9 +25,9 @@ export default function LP() {
               <span className="text-[15px] font-black text-white">面倒な入力は不要！</span>
               <span className="text-[#FFD96B] text-sm">🌾</span>
             </div>
-            <a href="https://hatake-ai.vercel.app/" className="w-full bg-gradient-to-r from-[#FCE556] to-[#FE5007] text-white rounded-2xl py-[16px] text-[17px] font-black shadow-[0_8px_20px_rgba(0,0,0,0.2)] flex items-center justify-center gap-2">
+            <span className="w-full bg-gradient-to-r from-[#FCE556] to-[#FE5007] text-white rounded-2xl py-[16px] text-[17px] font-black shadow-[0_8px_20px_rgba(0,0,0,0.2)] flex items-center justify-center gap-2">
               無料で試してみる <span>›</span>
-            </a>
+            </span>
             <div className="flex justify-center gap-3.5 mt-4 text-[11px] text-[#CDE5D8] flex-wrap">
               <span>写真を撮るだけ</span><span>今日やることが分かる</span><span>記録が残る</span>
             </div>
@@ -47,9 +47,9 @@ export default function LP() {
           <div className="px-6 pb-11">
             <div className="bg-hatake-green rounded-[18px] px-5 py-6 text-center -mt-1">
               <p className="text-white text-sm font-bold mb-4">その迷いを、AIが解決します。</p>
-              <a href="https://hatake-ai.vercel.app/" className="w-full bg-gradient-to-r from-[#FCE556] to-[#FE5007] text-white rounded-2xl py-[15px] text-[15px] font-black block">
+              <span className="w-full bg-gradient-to-r from-[#FCE556] to-[#FE5007] text-white rounded-2xl py-[15px] text-[15px] font-black block">
                 無料で試してみる
-              </a>
+              </span>
             </div>
           </div>
         </section>
@@ -124,7 +124,7 @@ export default function LP() {
               className="object-cover object-top"
             />
             <a
-              href="https://hatake-ai.vercel.app/"
+              href="#"
               aria-label="無料で今日のアクションを確認する"
               className="absolute"
               style={{ left: '4%', width: '92%', top: '70%', height: '16%' }}
