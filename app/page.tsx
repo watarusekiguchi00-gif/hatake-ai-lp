@@ -129,6 +129,15 @@ export default function LP() {
               fill
               className="object-cover object-top"
             />
+            {/* 準備中オーバーレイ：ボタン帯を覆う */}
+            <div className="absolute flex flex-col items-center gap-1" style={{ left: '4%', width: '92%', top: '69%', height: '18%' }}>
+              <span className="w-full bg-[#A8A8A8] text-white rounded-2xl py-[13px] text-[16px] font-black flex items-center justify-center gap-2 cursor-default">
+                🌱 ただいま準備中です
+              </span>
+              <a href="https://www.instagram.com/hatake_ai_jp?igsh=N3dpNXlqcTRidTRn" target="_blank" rel="noopener noreferrer" className="text-[12px] text-hatake-green underline underline-offset-2">
+                👉 最新情報は Instagram @hatake_ai_jp
+              </a>
+            </div>
           </div>
         </section>
 
