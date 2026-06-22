@@ -115,19 +115,19 @@ export default function LP() {
         </section>
 
         {/* 8. Final CTA */}
-        <section className="bg-hatake-green relative">
-          <div className="relative w-full" style={{ aspectRatio: '864 / 1821' }}>
+        <section className="bg-hatake-cream relative">
+          <div className="relative w-full" style={{ aspectRatio: '862 / 1825' }}>
             <Image
               src="/final-cta-composite.png"
-              alt="AIと一緒に、もっと上手に育てよう。hatake.aiをはじめよう！家庭菜園の悩みを、AIと記録で解決！簡単3ステップでOK：1 写真を撮るだけ、2 今日のやることがわかる、3 わたしの畑日誌になる。記録が積み上がるほど、あなたの畑がもっと豊かに。今すぐ試してみる。登録は簡単30秒、すべての機能が無料で使える、いつでも解約OK"
+              alt="AIと一緒に、もっと上手に育てよう。hatake.ai 家庭菜園の悩みを、AIと記録で解決！1 写真を撮るだけ、2 今日のアクションがすぐわかる、3 記録が残る。記録が積み上がるほど、あなたの畑がもっと豊かに。まずは無料でお試しください。無料で今日のアクションを確認する。登録30秒、クレカ不要、いつでも解約OK"
               fill
               className="object-cover object-top"
             />
             <a
               href="https://hatake-ai.vercel.app/"
-              aria-label="今すぐ試してみる"
+              aria-label="無料で今日のアクションを確認する"
               className="absolute"
-              style={{ left: '4%', width: '92%', top: '87.5%', height: '6.5%' }}
+              style={{ left: '4%', width: '92%', top: '70%', height: '16%' }}
             />
           </div>
         </section>
